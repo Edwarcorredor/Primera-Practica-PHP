@@ -2,7 +2,9 @@
   /**
    **Se tiene que dividir por carpetas los tipos de archivos para tener un orden en el proyecto
   */
-  
+  /**
+   * TODO: 6 Funciones de salida
+  */
     echo 5;
     /**
      * * echo imprime contenido
@@ -17,20 +19,29 @@
     /**
      **sprintf Se comporta parecido a un template string 
     */ 
+    var_dump($mensaje);
+    /**
+     * *var_dump se usa para imprimir el contenido y la estructura del dato
+    */
+    /**
+     *TODO:7 Variables y constantes 
+    */
+
+    $nombre = (string) "Edwar";
+    /**
+     * *$variable = (tipo) se usa para definir variables y decir estrictamente su tipo de dato
+    */
+
     define("MENSAJE","mundo");
     printf("%s %s ",$mensaje, MENSAJE);
     /**
      **define se usa para crear constantes 
     */
-    var_dump($mensaje);
-    /**
-     * *var_dump se usa para imprimir el contenido y la estructura del dato
-    */
-    $nombre = (string) "Edwar";
-    /**
-     * *$variable = (tipo) se usa para definir variables y decir estrictamente su tipo de dato
-    */
     
+    /**
+     *TODO:8 Tipos de datos
+    */
+
     $logueado = true;
     var_dump($logueado);
 
@@ -62,4 +73,9 @@
      * *Arreglos (array): se utilizan para almacenar una colección de datos, que pueden ser de diferentes tipos.
 
     */
+
+    /**
+     * TODO: Números y operadores
+    */
+
 ?>
