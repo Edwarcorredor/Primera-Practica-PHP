@@ -76,6 +76,65 @@
 
     /**
      * TODO: Números y operadores
+     * 
+     * todo : Operadores aritmeticos 
+     * * + = Adicion
+     * * - = Substraccion
+     * * * = Multiplicacion
+     * * / = Divison
+     * * % = Modulo
+     * * (**) = Exponenciacion
+     * 
+     * todo: Operadores de asignacion
+     * * = igualar
+     * 
+     * todo: Operadores de Array
+     * * + = Union
+     * * == = Igualdad
+     * * === = Identico
+     * * != = desigualdad
+     * * <> = desigualdad
+     * * !== = no es identico
+     * 
+     * todo: Operadores Bitwise
+     * * & = and
+     * * ^ = xor
+     * * | = not
+     * * << = shift left
+     * * >> = shift rigth
+     * 
+     * todo: Operadores de comparacion
+     * * == = igual
+     * * === = identico
+     * * != = no es igual
+     * * !== = no es identico
+     * * <> = no igual
+     * * < = menor a esto
+     * * <= menor o igual
+     * * > = mayor a esto
+     * * >= mayor o igual
+     * * <=> = spaceship 
+     * 
+     * todo: Operadores de ejecucion
+     * * `` = backticks
+     * 
+     * todo: Operadores para control de errores
+     * * @ = at sign
+     * 
+     * todo: Operadores de incremento/decremento
+     * * ++$a = preIncremento
+     * * $a++ = PostIncremento
+     * * --$a = PreDrecemento
+     * * $a-- = PostDecremento
+     * 
+     * todo: Operadores de logica
+     * * && = and
+     * * || = or 
+     * * ! = not
+     * * and = and
+     * * xor = xor
+     * * or = or
+     *
     */
 
 ?>
