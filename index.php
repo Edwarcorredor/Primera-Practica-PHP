@@ -75,7 +75,7 @@
   */
 
   /**
-   * TODO: Números y operadores
+   * TODO: 9.Números y operadores
    * 
    * todo : Operadores aritmeticos 
    * * + = Adicion
@@ -217,4 +217,60 @@
   echo "<br>";
 
   echo "El Cliente". $nombreCliente. "es". $tipoCliente;
-  
+
+  echo "El cliente {$nombrecliente} es {$tipoCliente}";
+
+  /**
+   *Todo: 10.Arreglos, Arreglos asociativos y funciones para arreglos
+  */
+
+  $miArreglo = array("valor1","valor2","valor3");
+
+  $carrito = ['Tablet', 'Television', 'Computadora'];
+
+  echo "<pre>";
+  var_dump($carrito);
+  echo "</pre>";
+
+  /**
+   ** Util para ver los contenidos de un Array 
+  */
+
+  echo $carrito[1];
+
+  /**
+   ** Acceder a un elemento de un Array 
+  */
+
+  $carrito[3] = 'Nuevo Producto...';
+
+  /**
+   **Añade un elemento en el indice 3 del arreglo 
+  */
+
+  array_push($carrito, 'Audifonos');
+
+  /**
+   **Añadir un elemento nuevo al final 
+  */
+
+  array_unshift($carrito, 'Smartwatch');
+
+  /**
+   **Añade un elemento al inicio
+  */
+
+  echo "<pre>";
+  var_dump($carrito);
+  echo "</pre>";
+
+  /**
+   **Util para ver los contenidos de un array
+  */
+
+  $clientes = array('Cliente 1', 'Cliente 2', 'Cliente 3');
+  echo "<pre>";
+  var_dump($clientes);
+  echo "</pre>";
+
+  echo $clientes[1];
