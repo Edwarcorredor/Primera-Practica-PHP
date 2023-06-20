@@ -218,7 +218,7 @@
 
   echo "El Cliente". $nombreCliente. "es". $tipoCliente;
 
-  echo "El cliente {$nombrecliente} es {$tipoCliente}";
+  echo "El cliente {$nombreCliente} es {$tipoCliente}";
 
   /**
    *Todo: 10.Arreglos, Arreglos asociativos y funciones para arreglos
@@ -274,3 +274,100 @@
   echo "</pre>";
 
   echo $clientes[1];
+
+  /**
+   *Todo: 11.Isset() y Empty()
+   *En PHP, isset() y empty() son dos funciones utilizadas para verificar si una variable o un elemento de un array tiene un valor definido o no. A pesar de que ambas funciones tienen objetivos similares, hay algunas diferencias clave entre ellas.
+  */
+
+  $miVariable = "Hola";
+  if(isset($miVariable)){
+    echo "La variable esta definida y tiene un valor";
+  }
+  else{
+    echo "La variable no esta definida o no tiene un valor";
+  }
+
+  $miVariable = "";
+  if(empty($miVariable)){
+    echo "La variable no esta definida";
+  }
+  else{
+    echo "La variable esta definida";
+  }
+
+  $cliente = [];
+  $clientes2 = array();
+  $clientes3 = array('Pedro','Juan','Karen');
+  $cliente=[
+    'nombre'=>'Juan',
+    'saldo'=> 200
+  ];
+
+  var_dump(empty($clientes));
+  var_dump(empty($clientes3));
+  var_dump(empty($clientes2));
+  echo "<br>";
+
+  var_dump(isset($clientes4));
+  var_dump(isset($clientes));
+  var_dump(isset($clientes2));
+  var_dump(isset($clientes3));
+
+  var_dump(isset($cliente['nombre']));
+  var_dump(isset($cliente['codigo']));
+
+  //in_array - buscar elementos en un arreglo
+
+  var_dump(in_array('Audifonos',$carrito));
+
+
+  //Ordenar elementos en un arreglo
+
+  $numeros = array(1,3,4,5,1,2);
+
+  sort($numeros);
+  rsort($numeros);
+
+  echo "<pre>";
+  var_dump($numeros);
+  echo "</pre>";
+
+  //Ordenar arreglo asociativo
+
+  $cliente = array(
+    'saldo' =>200,
+    'tipo' => 'Premium',
+    'nombre' => 'Juan'
+  );
+
+  echo "<pre>";
+  var_dump($cliente);
+  echo "</pre>";
+
+  asort($cliente); // Ordena por valores (Orden alfabetico)
+  arsort($cliente); //Ordena por valores (Z primero)
+  ksort($cliente); //Ordena por llaves (Orden alfabetico)
+  krsort($cliente); //Orden alfabetico inverso
+
+  /**
+   *todo Estructuras de control 
+   *Las estructuras de control en programación son herramientas que se utilizan para controlar el flujo de ejecución de un programa. Estas estructuras permiten que el programa tome decisiones y realice diferentes acciones en función de ciertas condiciones.
+   *todo Estructuras condicionales
+   *Las estructuras condicionales son una estructura de control de flujo en programación que permite que el programa tome decisiones basadas en si se cumple o no una condición. En otras palabras, una estructura condicional permite que el programa ejecute diferentes bloques de código en función de si se cumple o no una determinada condición.
+   *todo IF
+   *En programación, el condicional "if" es una estructura de control que permite tomar decisiones en función de si se cumple o no una determinada condición. Se utiliza para definir una acción que se ejecutará si se cumple la condición especificada y otra acción que se ejecutará si no se cumple.
+  */
+
+  if (10>3){
+  }
+  else if(10<20){
+  }
+  else{
+  }
+
+  /**
+   *todo switch
+   * En PHP, el "switch" es una estructura de control que permite ejecutar diferentes bloques de código dependiendo del valor de una variable.
+  */
+
